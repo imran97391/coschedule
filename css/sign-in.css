@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #474747;
+}
+a {
+  cursor: pointer;
+}
+body {
+  font-family: "MuseoSans-300", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  background: linear-gradient(to top right, #b3b3b3, #e6e6e6);
+}
+.account-container .signin-wrapper {
+  width: 400px;
+  padding: 30px;
+  border-radius: 6px;
+  margin-bottom: 50px;
+  background-color: #f7f7f7;
+  margin: 67px auto;
+  top: cal(50%-250px);
+  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 30%);
+}
+.logo-wrapper {
+  height: 60px;
+}
+.logo-wrapper img {
+  width: 250px;
+  margin: 30px auto 40px;
+  display: block;
+}
+form label {
+  color: #828282;
+  font-size: 12px;
+  display: block;
+  margin: 10px 0 5px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+form input {
+  border-radius: 2px;
+  border: 1px solid #d8d8d8;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 18px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+form button {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #d17760;
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px 12px;
+  height: 48px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.img-left {
+  width: 250px;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+}
+.img-right {
+  width: 250px;
+  opacity: 0.4;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.footer-link {
+  text-align: center;
+  margin-top: 50px;
+  color: #7e7e7e;
+  font-size: 13px;
+}
+.footer-link a {
+  text-decoration: none;
+  color: #7e7e7e;
+}
+
+@media screen and (max-width: 780px) {
+  .img-left,
+  .img-right {
+    display: none;
+  }
+  body {
+    background: #f7f7f7;
+  }
+  .account-container .signin-wrapper {
+    width: 100%;
+    box-shadow: none;
+  }
+}
