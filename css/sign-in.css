@@ -84,6 +84,11 @@ form button {
   text-decoration: none;
   color: #7e7e7e;
 }
+.para {
+  text-transform: capitalize;
+  text-align: center;
+  color: red;
+}
 
 @media screen and (max-width: 780px) {
   .img-left,

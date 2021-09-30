@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #474747;
+  box-sizing: border-box;
+}
+body {
+  font-family: "MuseoSans-300", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+}
+a {
+  cursor: pointer;
+}
+
+/* 
+
+*/
+.navbar {
+  min-height: auto;
+  height: 70px;
+  margin: 0;
+  padding: 0px 15px;
+}
+.navbar .image {
+  width: 180px;
+  height: 41px;
+}
+.navbar .logo-link {
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  display: inline-block;
+  position: relative;
+}
+.navbar .logo-link img {
+  display: block;
+  max-width: 100%;
+}
+
+.navbar .navbar-left,
+.navbar-right {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 30px;
+}
+.navbar .navbar-left li,
+.navbar-right li {
+  display: inline-block;
+  list-style: none;
+}
+.navbar .navbar-left li a,
+.navbar-right li a {
+  font-weight: normal;
+  font-family: "MuseoSans-700", sans-serif;
+  color: #2f2f2f;
+  font-size: 14px;
+  padding: 10px 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navbar .navbar-left li a:hover,
+.navbar-right li a:hover {
+  color: #d4765d;
+}
+.gray {
+  background-color: #f8f8f8 !important;
+}
+.navbar-right {
+  float: right;
+}
+.navbar-right li a .btn-nav {
+  font-weight: bold;
+  background-color: #f37e5d;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  min-width: 150px;
+  border: none;
+  margin-top: -7px;
+  cursor: pointer;
+}
+.navbar-right li a .btn-nav:hover,
+.home-heading .btn:hover {
+  background-color: #f16b45;
+}
+
+/*  */
+
+.home-heading {
+  padding: 80px 20px 170px;
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+.home-heading .heding-h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "MuseoSans-700", sans-serif;
+  line-height: 130%;
+  letter-spacing: -0.3px;
+  text-transform: none;
+}
+.home-heading .para-heading {
+  font-size: 18px;
+  line-height: 150%;
+  margin: 5px 0 25px;
+}
+.btn {
+  font-weight: bold;
+  font-family: "MuseoSans-700", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  min-width: 220px;
+  border-radius: 3px;
+  background-color: #f37e5d;
+  padding: 15px 20px;
+  border: none;
+}
+.home-heading p.small {
+  font-size: 14px;
+  font-style: normal;
+  margin: 10px auto 0;
+  max-width: 300px;
+}
+
+.home-image-grid {
+  position: relative;
+  width: 1200px;
+  margin: -180px auto 50px;
+  height: 550px;
+  background: url("https://coschedule.com/img/home/h-background.png");
+  background-size: contain;
+}
+.home-image-grid .grid-inside {
+  display: grid;
+  width: 1044px;
+  margin: auto;
+  grid-template-columns: repeat(5, 20%);
+  padding-top: 100px;
+}
+.home-image-grid .col2 {
+  padding-top: 35px;
+}
+.home-image-grid div {
+  margin: 12px;
+}
+.home-image-grid div img {
+  width: 100%;
+}
+
+/*  */
+
+.logo-section {
+  text-align: center;
+  padding-bottom: 60px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 130%;
+  letter-spacing: -0.3px;
+}
+.logo-section .logo-container picture {
+  display: inline-block;
+  width: 180px;
+  height: 63px;
+  margin: 10px 20px 20px;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+/*  */
+
+.our-products {
+  padding: 70px 0;
+}
+.our-products .our-p-title h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.our-products .our-p-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+.our-products .row {
+  display: flex;
+}
+.our-products .col {
+  position: relative;
+  text-align: center;
+  padding: 30px 30px 15px;
+  width: 50%;
+}
+.our-products .col p {
+  max-width: 300px;
+  font-size: 14px;
+  line-height: 160%;
+  margin: 0 auto;
+}
+.our-products .col h2 {
+  font-size: 25px;
+  margin: 20px 0 10px 0;
+}
+.our-products .col img {
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 2px 2px 15px 0 rgb(0 0 0 / 15%);
+  width: 55px;
+  height: 55px;
+}
+.our-products .col .price-upper {
+  text-align: center;
+  display: inline-block;
+}
+.our-products .price-lower {
+  margin-top: 30px;
+  min-height: 268px;
+  border-bottom: none;
+}
+.our-products .price-lower ul li {
+  list-style-image: url(https://coschedule.com/img/orange-checkmark.png);
+}
+.our-products .price-lower .market {
+  max-width: 300px;
+  margin: 0 auto 30px;
+  padding-left: 30px;
+  min-height: 180px;
+  text-align: left;
+}
+.our-products .price-lower .market li {
+  font-size: 14px;
+  line-height: 150%;
+  margin: 17px 0;
+}
+.our-products .price-lower .market .pop-tip {
+  position: relative;
+}
+.our-products .price-lower .market .pop-tip:hover .pop-content {
+  opacity: 1;
+}
+.our-products .price-lower .market .pop-content {
+  box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 20%);
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  background: #fff;
+  border-radius: 6px;
+  pointer-events: none;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+.border-right {
+  border-right: 1px solid #e9e9e9;
+}
+.btn-default {
+  min-width: 300px;
+}
+.btn-suite {
+  color: #f37e5d;
+  border: 2px solid #f37e5d;
+  background-color: transparent;
+}
+.btn-suite:hover {
+  background: #f37e5d;
+  color: #fff;
+}
+
+/*  */
+
+.footer {
+  background: linear-gradient(to right, #f37e5d 0%, #f9a97d 100%);
+  padding: 70px 20px;
+  text-align: center;
+  color: #fff;
+}
+.footer h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.footer .btn-white {
+  width: 240px !important;
+  margin: 10px auto;
+  color: #f37e5d;
+  background-color: #fff;
+}
+.footer .btn-white:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}

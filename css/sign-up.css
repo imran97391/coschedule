@@ -66,6 +66,7 @@ form .form-signup input {
 form .btn-container {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
 }
 form .btn {
   background: #f37e5d;

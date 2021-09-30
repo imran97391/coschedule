@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/sign-in.css">
     <link rel="icon" href="https://coschedule.com/img/favicon.ico" type="image/x-icon">
-    <title>Try CoSchedule FREE Now - CoSchedule</title>
+    <title>CoSchedule Accounts</title>
 </head>
 <body>
     <div class="account-container">
@@ -14,17 +14,24 @@
             <div class="logo-wrapper">
                 <img src="https://accounts.coschedule.com/img/cos-logo-horz.svg" alt="">
             </div>
-            <form action="">
-                    <label for="email">Email Address</label>
+            <!-- <form action="" onsubmit="signin(e)">
+                    <label for="email" onsubmit="">Email Address</label>
                     <input  required="" placeholder="Email Address" id="email"
                         class="input-field input-email" type="email">
                     <label for="password">Password</label>
                     <input required="" placeholder="Password" id="password"
                         class="input-field input-password" type="password">
-                    <button id="submit-button" class="button sign-in-button" type="submit">
-                        Sign In</button>
+                        <div class="para" id="error-msg"></div>
+                    <button id="submit-button" class="button sign-in-button" type="submit">Sign In</button>
+            </form> -->
+            <form onsubmit="signin(event)" action="" id="myForm">
+                <label for="">Email Address</label>
+                <input type="text" id="email" class="input-field input-email">
+                <label for="">password</label>
+                <input type="password" id="password" class="input-field input-password">
+                <div class="para" id="error-msg"></div>
+                <button>Sign In</button>
             </form>
-            <div class="para" id="error-msg"></div>
                 <div class="footer-link">
                     <a href="../Html/sign-up.html" id="sign-up-link" class="links">Need an account?</a>
                     <span>|</span>
@@ -35,5 +42,6 @@
         <img class="img-left" src="https://accounts.coschedule.com/img/login-boxes.svg" alt="">
         <img class="img-right" src="https://accounts.coschedule.com/img/login-boxes.svg" alt="">
     </div>
+    <script src="../js-files/sign-in.js"></script>
 </body>
 </html>
