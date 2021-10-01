@@ -1,11 +1,7 @@
- function linkedinHome(){
-        window.location.href ="home.html"
-    }
-
         function submitForm(e){
             e.preventDefault();
             //console.log(e);
-            var proMembershipDetails =[];
+            var paymentDetails =[];
             var firstName = document.getElementById('firstName').value;
             var lastName = document.getElementById('lastName').value;
             var creditNumber = document.getElementById('creditNum').value;
@@ -24,11 +20,15 @@
                PostalCode:postalCode,
                GSTdetails:gstNumber,
            }
-            proMembershipDetails.push(obj);
-           localStorage.setItem('proMembers',JSON.stringify(proMembershipDetails));
+            paymentDetails.push(obj);
+            localStorage.setItem('proMembers', JSON.stringify(paymentDetails));
+            
+
+            let fullContent = document.getElementById("container-body");
+            let overLay = document.getElementById("overLay");
            function alertCustomer(){
-            alert("Pro Membership Activated!");
-                window.location.href ="../Html/index.html"
-           }
-           setTimeout(alertCustomer,2000)
+            e.preventDefault()
+            setTimeout(() =>{fullContent.style.display='none',overLay.style.display='unset'}, 2000);
+            setTimeout(() => (window.location.href = "../Html/congrats.html"), 8000);
+            } setTimeout(alertCustomer, 1000);
         }
