@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #474747;
+  box-sizing: border-box;
+}
+body {
+  font-family: "MuseoSans-300", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+a {
+  cursor: pointer;
+}
+/*  */
+.navbar {
+  min-height: auto;
+  height: 70px;
+  margin: 0;
+  padding: 0px 15px;
+}
+.navbar .image {
+  width: 180px;
+  height: 41px;
+}
+.navbar .logo-link {
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  display: inline-block;
+  position: relative;
+}
+.navbar .logo-link img {
+  display: block;
+  max-width: 100%;
+}
+
+.gray {
+  background-color: #f8f8f8 !important;
+}
+
+#container {
+  width: 340px;
+  height: 420px;
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f8f9fd;
+  border: 1px solid;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#title {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #0e0d0d;
+}
+#title:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.conf-text {
+  margin-top: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #606060;
+}
+
+#btn-continue {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.5s;
+  background-color: #f37e5d;
+}
+
+#btn-continue:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.congrats-h3 {
+  text-align: center;
+}

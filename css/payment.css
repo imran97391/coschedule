@@ -44,10 +44,6 @@ input {
 .gray {
   background-color: #f8f8f8 !important;
 }
-
-.padder {
-  padding-top: 4vw;
-}
 .hover:hover {
   cursor: pointer;
 }
@@ -440,4 +436,29 @@ input {
   #checkout6 {
     width: 74%;
   }
+}
+
+#overLay {
+  position: relative;
+  background-size: cover;
+  background-color: #f8f8f8;
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  display: none;
+}
+#overLayGif {
+  width: 100%;
+  margin: 40px auto;
+  /* margin:150px 30vw ; */
+}
+.overLayGif {
+  width: 50%;
+  margin: auto;
+}
+#overLay > h1 {
+  font-size: 35px;
+  text-align: center;
+  margin: 20px;
 }
