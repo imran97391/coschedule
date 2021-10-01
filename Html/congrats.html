@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+
+    <link rel="stylesheet" href="../css/congrats.css">
+</head>
+
+<body class="gray">
+
+    <div id="main">
+
+        <div class="header gray">
+            <nav class="navbar">
+                <div class="navbar-header">
+        
+                    <a href="../Html/index.html" class="logo-link">
+                        <img src="https://coschedule.com/img/cos-logo-full-color.svg" alt="" class="image">
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div id="container">
+            <h1 id="title">Payment Successful </h1>
+            <h3 class="congrats-h3">Get more done in less time with the only work management software for marketers.</h3>
+            <p class="conf-text">
+                Thank you for Choosing CoSchedule. Organize All Of Your Marketing In One Place. From Any Place.
+            </p>
+            <button id="btn-continue" onclick="allcheckout(event)">Continue</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function allcheckout(e) {
+        e.preventDefault();
+        window.location.href = '../Html/home.html'
+    }
+</script>
